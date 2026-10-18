@@ -229,7 +229,7 @@ MS in Computer Engineering from Stony Brook University (GPA: 3.87/4.00).`,
 
     resume: () => {
       window.open(
-        'https://docs.google.com/document/d/1K_ZaYilpDd4CQGQXnkKTYOYGXr7IjDDv/edit?usp=sharing&ouid=114494118429740793713&rtpof=true&sd=true',
+        'https://drive.google.com/file/d/1K_ZaYilpDd4CQGQXnkKTYOYGXr7IjDDv/view?usp=sharing',
         '_blank'
       );
       return 'Opening Google Drive link to request resume access...';
@@ -592,7 +592,7 @@ MS in Computer Engineering from Stony Brook University (GPA: 3.87/4.00).`,
         break;
       case 'resume':
         window.open(
-          'https://docs.google.com/document/d/1K_ZaYilpDd4CQGQXnkKTYOYGXr7IjDDv/edit?usp=sharing&ouid=114494118429740793713&rtpof=true&sd=true',
+          'https://drive.google.com/file/d/1K_ZaYilpDd4CQGQXnkKTYOYGXr7IjDDv/view?usp=sharing',
           '_blank'
         );
         break;
