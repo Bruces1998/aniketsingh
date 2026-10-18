@@ -1,378 +1,1990 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="description"
+      content="Aniket Singh — Software Engineer (AI/ML) at Google Play focusing on large-scale personalization and recommendation models. MS in Computer Engineering from Stony Brook University."
+    />
+    <meta name="author" content="Aniket Singh" />
+    <title>Aniket Singh | SWE @ Google | ML &amp; Personalization</title>
 
-    <title>Aniket Singh</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./static/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./static/css/unicons.css">
-    <link rel="stylesheet" href="./static/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./static/css/owl.theme.default.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="static/favicon.svg" />
 
-    <!-- MAIN STYLE -->
-    <link rel="stylesheet" href="./static/css/tooplate-style.css">
-    
-<!--
+    <!-- Open Graph / LinkedIn / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bruces1998.github.io/" />
+    <meta property="og:title" content="Aniket Singh | SWE @ Google (AI/ML) | Personalization &amp; RecSys" />
+    <meta
+      property="og:description"
+      content="Software Engineer (AI/ML) at Google Play working on large-scale personalization and recommendation models serving millions of users. MS in Computer Engineering from Stony Brook University."
+    />
+    <meta property="og:image" content="static/images/og-preview.svg" />
 
-Tooplate 2115 Marvel
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Aniket Singh | SWE @ Google (AI/ML) | Personalization &amp; RecSys" />
+    <meta
+      name="twitter:description"
+      content="Software Engineer (AI/ML) at Google Play working on large-scale personalization and recommendation models. MS in Computer Engineering from Stony Brook University."
+    />
+    <meta name="twitter:image" content="static/images/og-preview.svg" />
 
-https://www.tooplate.com/view/2115-marvel
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Aniket Singh",
+      "givenName": "Aniket",
+      "familyName": "Singh",
+      "jobTitle": "Software Engineer (AI/ML)",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Google",
+        "url": "https://about.google/"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Mountain View",
+        "addressRegion": "CA",
+        "addressCountry": "US"
+      },
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Stony Brook University",
+          "url": "https://www.stonybrook.edu/"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Mumbai",
+          "url": "https://mu.ac.in/"
+        }
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/aniketdsingh/",
+        "https://github.com/Bruces1998",
+        "https://medium.com/@bruces1998"
+      ],
+      "url": "https://bruces1998.github.io/",
+      "knowsAbout": [
+        "Personalization & Recommendation Systems",
+        "Machine Learning",
+        "Deep Learning",
+        "Computer Vision",
+        "Distributed Systems",
+        "Python",
+        "C++",
+        "TensorFlow",
+        "PyTorch"
+      ]
+    }
+    </script>
 
--->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome 6 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Main Portfolio Stylesheet -->
+    <link rel="stylesheet" href="static/css/portfolio.css" />
   </head>
   <body>
-    
-    <div id="rasa-chat-widget" data-websocket-url="http://0.0.0.0:5005"></div>
-    <script src="https://unpkg.com/@rasahq/rasa-chat" type="application/java`script"></script>
-    <!-- MENU -->
-    <nav class="navbar navbar-expand-sm navbar-light">
+    <!-- Ambient Background Glow Orbs -->
+    <div class="ambient-bg" aria-hidden="true">
+      <div class="ambient-orb orb-1"></div>
+      <div class="ambient-orb orb-2"></div>
+      <div class="ambient-orb orb-3"></div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="site-header">
+      <div class="container nav-inner">
+        <a href="#about" class="brand">
+          <span class="brand-monogram">AS</span>
+          <span>Aniket Singh</span>
+        </a>
+
+        <nav class="nav-links" id="navLinks" aria-label="Primary Navigation">
+          <a href="#about" class="nav-link active">About</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#education" class="nav-link">Education</a>
+          <a href="#blogs" class="nav-link">Writing</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button
+            class="cmd-trigger-btn"
+            id="cmdTriggerBtn"
+            type="button"
+            title="Command Palette (⌘K)"
+            aria-label="Open Command Palette"
+          >
+            <i class="fas fa-terminal"></i>
+            <span>⌘K</span>
+          </button>
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            type="button"
+            aria-label="Toggle color theme"
+            title="Toggle Dark / Light Mode"
+          >
+            <i class="fas fa-sun" id="themeIcon"></i>
+          </button>
+          <a
+            href="static/Aniket_Singh_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary btn-sm"
+          >
+            <i class="fas fa-file-arrow-down"></i>
+            <span>Resume</span>
+          </a>
+          <button
+            class="mobile-menu-btn"
+            id="mobileMenuBtn"
+            type="button"
+            aria-label="Toggle navigation menu"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- HERO / ABOUT SECTION -->
+      <section class="hero" id="about">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><i class='uil uil-user'></i>Aniket</a>
+          <div class="hero-grid">
+            <div class="hero-content">
+              <div class="status-pill">
+                <span class="status-dot"></span>
+                <span>SWE @ Google &bull; ML &amp; Personalization &bull; Mountain View, CA</span>
+              </div>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                <span class="navbar-toggler-icon"></span>
-                <span class="navbar-toggler-icon"></span>
-            </button>
+              <h1 class="hero-title">
+                Hi, I'm <span class="gradient-text">Aniket Singh</span>
+              </h1>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link"><span data-hover="About">About</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#project" class="nav-link"><span data-hover="Projects">Projects</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#resume" class="nav-link"><span data-hover="Resume">Resume</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#blogs" class="nav-link"><span data-hover="Blogs">Blogs</span></a>
+              <div class="hero-role-line">
+                <span>Working on</span>
+                <span class="dynamic-role" id="dynamicRole">SWE @ Google (Play Store ML)</span>
+              </div>
+
+              <p class="hero-description">
+                I'm a <strong>Software Engineer (AI/ML) at Google</strong> in Mountain View,
+                focusing on <strong>Google Play Store Apps ML</strong>—developing large-scale
+                personalization and recommendation models serving millions of users and
+                applications. I work at the intersection of <strong>scalable distributed software systems</strong>
+                and <strong>applied machine learning</strong>. Previously, I interned with the
+                <strong>Google Workspace (Google Vids)</strong> team in NYC, conducted clinical
+                computer vision research at <strong>Stony Brook Medicine</strong> during my MS in
+                Computer Engineering at <strong>Stony Brook University</strong>, and spent 2.5+
+                years as a Senior Software Engineer at <strong>LTIMindtree</strong>.
+              </p>
+
+              <div class="hero-cta">
+                <a
+                  href="https://www.linkedin.com/in/aniketdsingh/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                  <span>Connect on LinkedIn</span>
+                </a>
+                <a
+                  href="static/Aniket_Singh_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary"
+                >
+                  <i class="fas fa-file-pdf"></i>
+                  <span>View Resume</span>
+                </a>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  id="heroOfficeHoursBtn"
+                  data-open-office-hours
+                >
+                  <i class="fas fa-calendar-check"></i>
+                  <span>Office Hours &amp; Chat</span>
+                </button>
+              </div>
+
+              <div class="hero-socials">
+                <a
+                  href="https://www.linkedin.com/in/aniketdsingh/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-icon-btn"
+                  aria-label="LinkedIn"
+                  title="LinkedIn"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a
+                  href="https://github.com/Bruces1998"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-icon-btn"
+                  aria-label="GitHub"
+                  title="GitHub"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://medium.com/@bruces1998"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-icon-btn"
+                  aria-label="Medium"
+                  title="Medium Technical Blog"
+                >
+                  <i class="fab fa-medium-m"></i>
+                </a>
+                <a
+                  href="mailto:work.aniketdsingh@gmail.com"
+                  class="social-icon-btn"
+                  aria-label="Email"
+                  title="Email: work.aniketdsingh@gmail.com"
+                >
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Interactive Developer Profile Card with Multi-Tabs & Live CLI -->
+            <div class="hero-card">
+              <div class="terminal-bar">
+                <div class="terminal-dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <span class="terminal-title" id="terminalTitle">aniket@google-mtv:~/profile.json</span>
+                <span></span>
+              </div>
+
+              <!-- Terminal Tabs -->
+              <div class="terminal-tabs" role="tablist" aria-label="Terminal Code &amp; CLI Tabs">
+                <button
+                  class="terminal-tab active"
+                  id="tabBtnProfile"
+                  data-tab="profile"
+                  type="button"
+                  role="tab"
+                  aria-selected="true"
+                  aria-controls="paneProfile"
+                >
+                  <i class="fas fa-code"></i>
+                  <span>profile.json</span>
+                </button>
+                <button
+                  class="terminal-tab"
+                  id="tabBtnCli"
+                  data-tab="cli"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="paneCli"
+                >
+                  <i class="fas fa-terminal"></i>
+                  <span>interactive.sh</span>
+                </button>
+              </div>
+
+              <div class="hero-card-body">
+                <!-- Tab Pane 1: profile.json -->
+                <div
+                  class="terminal-tab-pane active"
+                  id="paneProfile"
+                  role="tabpanel"
+                  aria-labelledby="tabBtnProfile"
+                >
+                  <div class="profile-summary-top">
+                    <div class="profile-avatar-badge">
+                      <img
+                        src="static/images/profile.jpg"
+                        alt="Aniket Singh"
+                        class="profile-avatar-img"
+                        onerror="this.style.display='none'"
+                      />
+                    </div>
+                    <div class="profile-meta">
+                      <h3>Aniket Singh</h3>
+                      <p><i class="fas fa-location-dot"></i> Mountain View, California</p>
+                    </div>
+                  </div>
+
+                  <div class="code-block">
+                    <span class="code-line"><span class="code-kw">{</span></span>
+                    <span class="code-line">
+                      &nbsp;&nbsp;<span class="code-key">"role"</span>:
+                      <span class="code-str">"Software Engineer (AI/ML) @ Google"</span>,
+                    </span>
+                    <span class="code-line">
+                      &nbsp;&nbsp;<span class="code-key">"team"</span>:
+                      <span class="code-str">"Google Play — Apps ML &amp; Personalization"</span>,
+                    </span>
+                    <span class="code-line">
+                      &nbsp;&nbsp;<span class="code-key">"education"</span>:
+                      <span class="code-str">"MS Computer Eng @ Stony Brook University"</span>,
+                    </span>
+                    <span class="code-line">
+                      &nbsp;&nbsp;<span class="code-key">"specializations"</span>: [
+                      <span class="code-str">"Personalization &amp; RecSys"</span>,
+                      <span class="code-str">"Machine Learning"</span>,
+                      <span class="code-str">"Computer Vision"</span>,
+                      <span class="code-str">"Distributed Systems"</span>
+                      ],
+                    </span>
+                    <span class="code-line">
+                      &nbsp;&nbsp;<span class="code-key">"coreStack"</span>: [
+                      <span class="code-str">"Python"</span>, <span class="code-str">"C++"</span>,
+                      <span class="code-str">"Java"</span>, <span class="code-str">"TensorFlow"</span>,
+                      <span class="code-str">"JavaScript"</span>
+                      ],
+                    </span>
+                    <span class="code-line">
+                      &nbsp;&nbsp;<span class="code-key">"officeHours"</span>:
+                      <span class="code-str">"Open for Tech, Research &amp; Career Chats"</span>
+                    </span>
+                    <span class="code-line"><span class="code-kw">}</span></span>
+                  </div>
+                </div>
+
+                <!-- Tab Pane 2: interactive.sh (Live Mini CLI Terminal) -->
+                <div
+                  class="terminal-tab-pane"
+                  id="paneCli"
+                  role="tabpanel"
+                  aria-labelledby="tabBtnCli"
+                  style="display: none;"
+                >
+                  <div class="terminal-cli-box">
+                    <div class="terminal-cli-log" id="cliLog" role="log" aria-live="polite">
+                      <div class="cli-msg">Aniket CLI v2.4 (Mountain View, CA)</div>
+                      <div class="cli-msg">Type <span class="cli-highlight">'help'</span> for commands: whoami, skills, google, projects, office-hours, resume, clear.</div>
+                    </div>
+                    <form class="terminal-cli-form" id="cliForm" onsubmit="return false;">
+                      <span class="cli-prompt">guest@aniket:~$</span>
+                      <input
+                        type="text"
+                        class="terminal-cli-input"
+                        id="cliInput"
+                        placeholder="type command (e.g. help)..."
+                        autocomplete="off"
+                        spellcheck="false"
+                        aria-label="Terminal command input"
+                      />
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Key Impact Metrics Strip -->
+          <div class="metrics-strip reveal">
+            <div class="metric-card">
+              <div class="metric-value">Google Play</div>
+              <div class="metric-label">SWE (AI/ML) &bull; Large-Scale Personalization &amp; RecSys</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value">Google Vids</div>
+              <div class="metric-label">SWE Intern &bull; Workspace Timeline &amp; Collaboration</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value">3.87 / 4.0</div>
+              <div class="metric-label">MS in Computer Engineering @ Stony Brook</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value">4+ Years</div>
+              <div class="metric-label">Applied ML, Computer Vision &amp; Backend Systems</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE SECTION -->
+      <section class="section section-alt" id="experience">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-eyebrow">Career Journey</span>
+            <h2 class="section-title">Work &amp; Research Experience</h2>
+            <p class="section-subtitle">
+              Building planet-scale machine learning personalization models, collaborative web
+              infrastructure, and clinical computer vision systems.
+            </p>
+          </div>
+
+          <div class="timeline">
+            <!-- 1. Google Full-Time SWE (AI/ML) -->
+            <div class="timeline-item reveal">
+              <div class="timeline-marker"></div>
+              <article class="exp-card">
+                <div class="exp-header">
+                  <div>
+                    <h3 class="exp-role">Software Engineer (AI/ML)</h3>
+                    <div class="exp-company">
+                      <i class="fab fa-google"></i>
+                      <span>Google &bull; Google Play Store Apps ML</span>
+                    </div>
+                  </div>
+                  <div class="exp-meta">
+                    <span class="exp-date-badge">Jan 2026 – Present</span>
+                    <span>Mountain View, CA</span>
+                  </div>
+                </div>
+                <ul class="exp-bullets">
+                  <li>
+                    Focusing on <strong>Google Play Store Apps ML</strong>, designing and deploying
+                    large-scale <strong>personalization and recommendation models</strong> serving
+                    millions of users and applications globally.
+                  </li>
+                  <li>
+                    Working at the intersection of <strong>scalable distributed software systems</strong>
+                    and <strong>applied machine learning</strong> to optimize app discovery, ranking
+                    relevance, and user engagement.
                   </li>
                 </ul>
 
-                <ul class="navbar-nav ml-lg-auto">
-                    <div class="ml-lg-4">
-                      <div class="color-mode d-lg-flex justify-content-center align-items-center">
-                        <i class="color-mode-icon"></i>
-                        Color mode
-                      </div>
-                    </div>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- ABOUT -->
-    <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
-        <div class="container">
-            <div class="row">
-                
-                <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
-                    <div class="about-text">
-                        <small class="small-text">Welcome to <span class="mobile-block">my portfolio website!</span></small>
-                        <h1 class="animated animated-text">
-                            <span class="mr-2">Hey folks, I'm</span>
-                                <div class="animated-info">
-                                    <span class="animated-item">Aniket Singh</span>
-                                    <span class="animated-item">An Engineer</span>
-                                    <!-- <span class="animated-item">Deep Learning Enthusiast</span> -->
-                                </div>
-                        </h1>
-
-                        <p>I am a Software Engineer, specializing in Deep Learning, Computer Vision and Cloud Technologies. When I am not coding, 
-                          I love to cycle around my city, read some fiction and hangout with my friends.</p>
-                        
-                        <div class="custom-btn-group mt-4">
-                          <a target = "_blank"href="https://drive.google.com/file/d/1LPQH8jwJ6O2tLIdTcljytot4pdf4xFY6/view?usp=sharing" 
-                          class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i>Here's my Resume</a>
-                          <a target = "_blank" href="mailto:bruces1998@gmail.com" class="btn custom-btn custom-btn-bg custom-btn-link">My Email</a>
-                        </div>
-                    </div>
+                <div class="tag-list">
+                  <span class="tag">Machine Learning</span>
+                  <span class="tag">Personalization &amp; Recommendation Systems</span>
+                  <span class="tag">Scalable Distributed Systems</span>
+                  <span class="tag">Python</span>
+                  <span class="tag">C++</span>
+                  <span class="tag">TensorFlow</span>
                 </div>
-
-                <div class="col-lg-5 col-md-12 col-12">
-                    <div class="about-image svg">
-                        <img src="./static/images/undraw/undraw_software_engineer_lvl4.svg" class="img-fluid" alt="svg image">
-                    </div>
-                </div>
-
+              </article>
             </div>
-        </div>
-    </section>
 
-    
-
-
-  
-<section id="blogs">
-<!-- partial:index.partial.html -->
-<section class="container">
-  
-  <div class="container mt-5 pt-5" id="medium">
-    <div class="col-lg-8 text-center mx-auto">
-      <h2>My Blogs</h2>
-    </div>
-    <div class="row" id="jsonContent">
-    </div>
-</div>
-        <!-- <ul id="pagin" class="pagination">
-        </ul> -->
-
-    <div class="text-center">
-        <div class="mb-5">
-            <a class="btn btn-outline-primary btn-lg mb-5" href="https://medium.com/@bruces1998">View all Blogs</a>
-        </div>
-    </div>
-</section>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="./static/js/script.js"></script>
-
-</section>
-
-    <!-- PROJECTS -->
-    <section class="project py-5" id="project">
-        <div class="container">
-                
-                <div class="row">
-                  <div class="col-lg-11 text-center mx-auto col-12">
-
-                      <div class="col-lg-8 mx-auto">
-                        <h2>Projects</h2>
-                      </div>
-
-                      <div class="owl-carousel owl-theme">
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="./static/images/project/Emotion_Detector.png" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="./static/images/project/mask_detector.png" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
-
-                        <!-- <div class="item">
-                          <div class="project-info">
-                            <img frc="./static/images/project/project-image03.png" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="./static/images/project/project-image04.png" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="./static/images/project/project-image05.png" class="img-fluid" alt="project image">
-                          </div>
-                        </div> -->
-                      </div>
-
+            <!-- 2. Google SWE Intern -->
+            <div class="timeline-item reveal">
+              <div class="timeline-marker"></div>
+              <article class="exp-card">
+                <div class="exp-header">
+                  <div>
+                    <h3 class="exp-role">Software Engineer Intern</h3>
+                    <div class="exp-company">
+                      <i class="fab fa-google"></i>
+                      <span>Google &bull; Google Workspace (Google Vids, Slides &amp; Sheets)</span>
+                    </div>
+                  </div>
+                  <div class="exp-meta">
+                    <span class="exp-date-badge">May 2025 – Aug 2025</span>
+                    <span>New York, NY</span>
                   </div>
                 </div>
-        </div>
-    </section>
-
-    <!-- FEATURES -->
-    <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-6 col-12">
-                  <h2 class="mb-4">Experiences</h2>
-
-                    <div class="timeline">
-                        <div class="timeline-wrapper">
-                             <div class="timeline-yr">
-                                  <span>Present</span>
-                             </div>
-                             <div class="timeline-info">
-                                  <h3><span>Senior Consultant</span><small>Larsen & Toubro Infotech</small></h3>
-                                  <p>Working on Conversational AI with Oracle Business Unit.</p>
-                             </div>
-                        </div>
-
-                        <div class="timeline-wrapper">
-                            <div class="timeline-yr">
-                                <span>Dec 2020</span>
-                            </div>
-                            <div class="timeline-info">
-                                <h3><span>Machine Learning Intern</span><small>Cerebranium</small></h3>
-                                <p>Worked on creating Computer Vision solutions for AI Proctoring.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline-wrapper">
-                            <div class="timeline-yr">
-                                <span>Dec 2019</span>
-                            </div>
-                            <div class="timeline-info">
-                              <h3><span>Research Intern</span><small>IIIT Allahabad</small></h3>
-                                <p>Worked on Object Detection, Live Detection and Object Semantics.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="timeline-wrapper">
-                            <div class="timeline-yr">
-                                <span>June 2019</span>
-                            </div>
-                            <div class="timeline-info">
-                                <h3><span>Junior Data Scientist<small>SpiceTech</small></h3>
-                                <p>Worked on creating email spam detection, macros detector.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-12">
-                  <h2 class="mb-4 mobile-mt-2">Educations</h2>
-
-                    <div class="timeline">
-                        <div class="timeline-wrapper">
-                             <div class="timeline-yr">
-                                  <span>2021</span>
-                             </div>
-                             <div class="timeline-info">
-                                  <h3><span>BE-IT</span><small>VIT Mumbai</small></h3>
-                                  <ul>
-                                    <li>Secured a CGPA of 9.30/10.00</li>
-                                    <li>Department Topper for Semester III.</li>
-                                    <li>Class Representative: August 2017 - May 2021</li>
-                                  <ul>
-                                  <!-- <p>Took coursework Data Structures and Algorithms, Database Management System, Python Programming, 
-                                    Artificial Intelligence, Cloud Computing, Computer Networks. Class Representa </p> -->
-                             </div>
-                        </div>
-
-                        <div class="timeline-wrapper">
-                            <div class="timeline-yr">
-                                <span>2017</span>
-                            </div>
-                            <div class="timeline-info">
-                                <h3><span>HSC</span><small>MH High School</small></h3>
-                                
-                                  <ul>
-                                    <li>Graduated from MH High School specializing in electrical maintenance.</li>
-                                  </ul>
-                            </div>
-                        </div>
-                        
-                        <div class="timeline-wrapper">
-                            <div class="timeline-yr">
-                                <span>2015</span>
-                            </div>
-                            <div class="timeline-info">
-                                <h3><span>SSC</span><small>SVPM</small></h3>
-                                <ul>
-                                  <li>Completed my Schooling from SVPM, stood first in the school for SSC exams.</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="contact py-5" id="contact">
-      <div class="container">
-        <div class="row">
-          
-          <div class="col-lg-5 mr-lg-5 col-12">
-            <div class="google-map w-100">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15069.82562040148!2d72.97488019786988!3d19.218930904080384!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1637750558556!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-
-            <div class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5">
-                <div class="contact-info-item">
-                  <h3 class="mb-3 text-white">Say hello</h3>
-                  <p class="footer-text mb-0">(+91)7028319985</p>
-                  <p><a href="mailto:bruces1998@gmail.com">bruces1998@gmail.com</a></p>
-                </div>
-
-                <ul class="social-links">
-                     <!-- <li><a href="www.linkedin.com/in/aniketdsingh" class="uil uil-instagram" data-toggle="tooltip" data-placement="left" title="Dribbble"></a></li>
-                     <li><a href="www.instagram.com/aniiiket_singh" class="uil uil-instagram" data-toggle="tooltip" data-placement="left" title="Instagram"></a></li>
-                     <li><a href="www.github.com/Bruces1998" class="uil uil-github" data-toggle="tooltip" data-placement="left" title="Youtube"></a></li> -->
-                      <li><a target="_blank" class="btn btn-outline-light btn-sm btn-social mx-1" href="https://www.linkedin.com/in/aniketdsingh"><i class="fab fa-fw fa-linkedin-in"></i></a></li>
-                    
-                      <li><a target="_blank" class="btn btn-outline-light btn-sm btn-social mx-1" href="www.instagram.com/aniiiket_singh"><i class="fab fa-fw fa-instagram"></i></a></li>
-                      
-                      <li><a target="_blank" class="btn btn-outline-light btn-sm btn-social mx-1" href="www.github.com/Bruces1998"><i class="fab fa-fw  fa-github"></i></a></li>
-                      
-                      <li><a target="_blank" class="btn btn-outline-light btn-sm btn-social mx-1" href="https://medium.com/@bruces1998"><i class="fab fa-fw fa-medium"></i></a></li>
-
+                <ul class="exp-bullets">
+                  <li>
+                    Built <strong>timeline infrastructure and multi-select collaboration capabilities for Google Vids</strong>,
+                    a key enhancement for Google Workspace's AI-powered video editor.
+                  </li>
+                  <li>
+                    Implemented core back-end and middleware logic in <strong>Java</strong> for
+                    selection models within a shared codebase used across core Google Workspace
+                    products including <strong>Slides</strong> and <strong>Sheets</strong>.
+                  </li>
+                  <li>
+                    Developed interactive <strong>JavaScript / TypeScript</strong> functionality to
+                    manage user interactions on the timeline, ensuring fluid editing experiences for end users.
+                  </li>
+                  <li>
+                    Authored comprehensive unit tests using <strong>Gemini Agent</strong> to ensure
+                    production-ready code, utilized experimentation flags for controlled phased
+                    rollouts, and resolved critical production bugs for millions of users.
+                  </li>
                 </ul>
+                <div class="tag-list">
+                  <span class="tag">Java</span>
+                  <span class="tag">JavaScript / TypeScript</span>
+                  <span class="tag">Google Vids</span>
+                  <span class="tag">Google Workspace</span>
+                  <span class="tag">Gemini Agent</span>
+                </div>
+              </article>
+            </div>
+
+            <!-- 3. Stony Brook Medicine / SUNY Research Foundation -->
+            <div class="timeline-item reveal">
+              <div class="timeline-marker"></div>
+              <article class="exp-card">
+                <div class="exp-header">
+                  <div>
+                    <h3 class="exp-role">Research Assistant (AI/ML)</h3>
+                    <div class="exp-company">
+                      <i class="fas fa-microscope"></i>
+                      <span>Stony Brook Medicine &bull; Mofakham-Mikell Lab (SUNY Research Foundation)</span>
+                    </div>
+                  </div>
+                  <div class="exp-meta">
+                    <span class="exp-date-badge">May 2024 – May 2025</span>
+                    <span>Stony Brook, NY</span>
+                  </div>
+                </div>
+                <ul class="exp-bullets">
+                  <li>
+                    Conducted applied AI/ML research in collaboration with the <strong>Mofakham-Mikell Lab</strong>
+                    under <strong>Prof. Sima Mofakham</strong>, studying facial micro-movement
+                    biomarkers in comatose patients.
+                  </li>
+                  <li>
+                    Developed the computer vision pipeline and core iOS app features for
+                    <strong>SeeMe</strong>, a clinical platform employing computer vision and deep
+                    learning to detect covert consciousness using <strong>Swift, OpenCV, Python, Keras, and TensorFlow</strong>.
+                  </li>
+                  <li>
+                    Assisted in translating and optimizing legacy <strong>Fortran</strong> code for
+                    ray tracing and <strong>Single Scattering Albedo (SSA)</strong> models into
+                    <strong>Python</strong>, implementing multi-dimensional interpolation techniques
+                    for atmospheric data analysis.
+                  </li>
+                </ul>
+
+                <!-- Expandable Architecture Pipeline Flow -->
+                <details class="arch-details">
+                  <summary class="arch-summary">
+                    <i class="fas fa-sitemap"></i>
+                    <span>View Clinical Computer Vision &amp; Deep Learning Pipeline</span>
+                    <i class="fas fa-chevron-down summary-chevron"></i>
+                  </summary>
+                  <div class="arch-flow">
+                    <div class="arch-step">
+                      <span class="arch-step-tag">Capture</span>
+                      <strong>iOS High-FPS Video</strong>
+                      <small>Patient bedside facial feed capture (Swift/AVFoundation)</small>
+                    </div>
+                    <div class="arch-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="arch-step">
+                      <span class="arch-step-tag">Preprocess</span>
+                      <strong>OpenCV Micro-Landmarks</strong>
+                      <small>Facial stabilization &amp; optical flow tracking</small>
+                    </div>
+                    <div class="arch-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="arch-step">
+                      <span class="arch-step-tag">Inference</span>
+                      <strong>Deep Spatiotemporal CNN</strong>
+                      <small>TensorFlow/Keras covert consciousness classification</small>
+                    </div>
+                    <div class="arch-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="arch-step">
+                      <span class="arch-step-tag">Output</span>
+                      <strong>Clinical Telemetry Dashboard</strong>
+                      <small>Real-time neurologist consciousness score report</small>
+                    </div>
+                  </div>
+                </details>
+
+                <div class="tag-list">
+                  <span class="tag">Python</span>
+                  <span class="tag">TensorFlow &amp; Keras</span>
+                  <span class="tag">OpenCV</span>
+                  <span class="tag">Swift (iOS)</span>
+                  <span class="tag">Computer Vision</span>
+                  <span class="tag">Scientific Computing</span>
+                </div>
+              </article>
+            </div>
+
+            <!-- 4. LTIMindtree -->
+            <div class="timeline-item reveal">
+              <div class="timeline-marker"></div>
+              <article class="exp-card">
+                <div class="exp-header">
+                  <div>
+                    <h3 class="exp-role">Senior Software Engineer</h3>
+                    <div class="exp-company">
+                      <i class="fas fa-server"></i>
+                      <span>LTIMindtree (formerly Larsen &amp; Toubro Infotech)</span>
+                    </div>
+                  </div>
+                  <div class="exp-meta">
+                    <span class="exp-date-badge">Jul 2021 – Jan 2024</span>
+                    <span>Mumbai, India</span>
+                  </div>
+                </div>
+                <ul class="exp-bullets">
+                  <li>
+                    Spearheaded full-time backend engineering for <strong>AutoDB+</strong>, an
+                    enterprise automation tool for application and database management.
+                  </li>
+                  <li>
+                    Integrated <strong>Oracle Digital Assistant (ODA)</strong> Conversational AI bot
+                    with REST APIs, enabling natural-language chatbot access to AutoDB+ workflows.
+                  </li>
+                  <li>
+                    Designed and deployed <strong>50+ production REST APIs</strong> using
+                    <strong>Python, Flask, and Oracle Enterprise Database</strong> across Linux and Oracle Cloud servers.
+                  </li>
+                  <li>
+                    Reduced application load time by <strong>10%</strong> via in-memory caching and
+                    query optimization, and cut stage processing time by <strong>20%</strong> using
+                    multi-threaded parallel execution.
+                  </li>
+                </ul>
+                <div class="tag-list">
+                  <span class="tag">Python</span>
+                  <span class="tag">Flask</span>
+                  <span class="tag">Oracle Database</span>
+                  <span class="tag">Conversational AI</span>
+                  <span class="tag">Linux</span>
+                  <span class="tag">REST APIs</span>
+                </div>
+              </article>
+            </div>
+
+            <!-- 5. Larsen & Toubro Infotech (LTI) Hackathon -->
+            <div class="timeline-item reveal">
+              <div class="timeline-marker"></div>
+              <article class="exp-card">
+                <div class="exp-header">
+                  <div>
+                    <h3 class="exp-role">Machine Learning Intern &bull; Hackathon Winner</h3>
+                    <div class="exp-company">
+                      <i class="fas fa-trophy"></i>
+                      <span>Larsen &amp; Toubro Infotech (LTI)</span>
+                    </div>
+                  </div>
+                  <div class="exp-meta">
+                    <span class="exp-date-badge">Jan 2021 – Jun 2021</span>
+                    <span>Mumbai, India</span>
+                  </div>
+                </div>
+                <ul class="exp-bullets">
+                  <li>
+                    Selected through <strong>LTI's nationwide Hackathon</strong> among thousands of
+                    engineering candidates.
+                  </li>
+                  <li>
+                    Built a <strong>multi-class face-mask detection deep learning model</strong>
+                    using TensorFlow, Keras, and MobileNetV2, and designed a web app using Docker,
+                    Flask, and AWS EC2.
+                  </li>
+                  <li>
+                    Integrated <strong>Google Cloud Vision API</strong> and an OCR pipeline to
+                    extract text from documents and automate metadata tagging.
+                  </li>
+                </ul>
+                <div class="tag-list">
+                  <span class="tag">TensorFlow</span>
+                  <span class="tag">Computer Vision</span>
+                  <span class="tag">Deep Learning</span>
+                  <span class="tag">Docker</span>
+                  <span class="tag">AWS EC2</span>
+                  <span class="tag">Google Vision API</span>
+                </div>
+              </article>
+            </div>
+
+            <!-- 6. IIIT Allahabad (SILP Lab) -->
+            <div class="timeline-item reveal">
+              <div class="timeline-marker"></div>
+              <article class="exp-card">
+                <div class="exp-header">
+                  <div>
+                    <h3 class="exp-role">Research Intern</h3>
+                    <div class="exp-company">
+                      <i class="fas fa-university"></i>
+                      <span>SILP Lab — Indian Institute of Information Technology (IIIT Allahabad)</span>
+                    </div>
+                  </div>
+                  <div class="exp-meta">
+                    <span class="exp-date-badge">Dec 2019 – Jan 2020</span>
+                    <span>Allahabad, India</span>
+                  </div>
+                </div>
+                <ul class="exp-bullets">
+                  <li>
+                    Researched <strong>Liveness Detection</strong> in biometric face verification
+                    systems and object semantics, and benchmarked state-of-the-art <strong>R-CNN</strong>
+                    object detection architectures.
+                  </li>
+                </ul>
+                <div class="tag-list">
+                  <span class="tag">Liveness Detection</span>
+                  <span class="tag">R-CNN Object Detection</span>
+                  <span class="tag">Computer Vision</span>
+                </div>
+              </article>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="col-lg-6 col-12">
-            <div class="contact-form">
-              <h2 class="mb-4">Interested to work together? Let's talk</h2>
+      <!-- TECHNICAL SKILLS SECTION -->
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-eyebrow">Technical Arsenal</span>
+            <h2 class="section-title">Core Specializations &amp; Stack</h2>
+            <p class="section-subtitle">
+              Operating at the intersection of large-scale personalization &amp; recommendation
+              models, computer vision, and distributed backend systems.
+            </p>
+          </div>
 
-              <form action="" method="get">
-                <div class="row">
-                  <div class="col-lg-6 col-12">
-                    <input type="text" class="form-control" name="name" placeholder="Your Name" id="name">
+          <div class="skills-grid">
+            <!-- Specializations -->
+            <div class="skill-category-card reveal">
+              <div class="skill-cat-header">
+                <div class="skill-cat-icon"><i class="fas fa-sparkles"></i></div>
+                <h3 class="skill-cat-title">Core Specializations</h3>
+              </div>
+              <div class="skill-pills">
+                <span class="skill-pill"><i class="fas fa-wand-magic-sparkles"></i> Personalization &amp; RecSys</span>
+                <span class="skill-pill"><i class="fas fa-brain"></i> Machine Learning</span>
+                <span class="skill-pill"><i class="fas fa-network-wired"></i> Deep Learning</span>
+                <span class="skill-pill"><i class="fas fa-eye"></i> Computer Vision</span>
+                <span class="skill-pill"><i class="fas fa-server"></i> Scalable Distributed Systems</span>
+                <span class="skill-pill"><i class="fas fa-comments"></i> Conversational AI</span>
+              </div>
+            </div>
+
+            <!-- Languages -->
+            <div class="skill-category-card reveal">
+              <div class="skill-cat-header">
+                <div class="skill-cat-icon"><i class="fas fa-code"></i></div>
+                <h3 class="skill-cat-title">Languages</h3>
+              </div>
+              <div class="skill-pills">
+                <span class="skill-pill"><i class="fab fa-python"></i> Python</span>
+                <span class="skill-pill"><i class="fas fa-microchip"></i> C / C++</span>
+                <span class="skill-pill"><i class="fab fa-java"></i> Java</span>
+                <span class="skill-pill"><i class="fab fa-js"></i> TypeScript</span>
+                <span class="skill-pill"><i class="fab fa-js-square"></i> JavaScript</span>
+                <span class="skill-pill"><i class="fas fa-database"></i> SQL</span>
+                <span class="skill-pill"><i class="fab fa-swift"></i> Swift</span>
+              </div>
+            </div>
+
+            <!-- Frameworks & Libraries -->
+            <div class="skill-category-card reveal">
+              <div class="skill-cat-header">
+                <div class="skill-cat-icon"><i class="fas fa-cubes"></i></div>
+                <h3 class="skill-cat-title">ML &amp; Web Frameworks</h3>
+              </div>
+              <div class="skill-pills">
+                <span class="skill-pill"><i class="fas fa-layer-group"></i> TensorFlow</span>
+                <span class="skill-pill"><i class="fas fa-fire"></i> Keras &amp; PyTorch</span>
+                <span class="skill-pill"><i class="fas fa-chart-line"></i> scikit-learn</span>
+                <span class="skill-pill"><i class="fas fa-camera"></i> OpenCV</span>
+                <span class="skill-pill"><i class="fas fa-bolt"></i> Flask</span>
+                <span class="skill-pill"><i class="fab fa-angular"></i> Angular &amp; Node.js</span>
+                <span class="skill-pill"><i class="fas fa-table"></i> NumPy, Pandas &amp; SciPy</span>
+              </div>
+            </div>
+
+            <!-- Infrastructure, Databases & Certifications -->
+            <div class="skill-category-card reveal">
+              <div class="skill-cat-header">
+                <div class="skill-cat-icon"><i class="fas fa-cloud"></i></div>
+                <h3 class="skill-cat-title">Systems, Cloud &amp; Databases</h3>
+              </div>
+              <div class="skill-pills">
+                <span class="skill-pill"><i class="fab fa-linux"></i> Linux</span>
+                <span class="skill-pill"><i class="fab fa-docker"></i> Docker</span>
+                <span class="skill-pill"><i class="fab fa-aws"></i> AWS &amp; GCP</span>
+                <span class="skill-pill"><i class="fab fa-git-alt"></i> Git</span>
+                <span class="skill-pill"><i class="fas fa-database"></i> Oracle DB, MySQL &amp; SQLite</span>
+                <span class="skill-pill"><i class="fab fa-google"></i> Gemini Agent</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section class="section section-alt" id="projects">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-eyebrow">Selected Work</span>
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">
+              Full-stack applications, predictive machine learning systems, real-time computer
+              vision pipelines, and VLSI graph algorithms.
+            </p>
+          </div>
+
+          <!-- Filter Buttons with Full ARIA Accessibility -->
+          <div class="filter-bar reveal" role="tablist" aria-label="Filter projects by category">
+            <button
+              class="filter-btn active"
+              data-filter="all"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              id="filter-all"
+            >
+              All Projects
+            </button>
+            <button
+              class="filter-btn"
+              data-filter="ai-cv"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              id="filter-ai-cv"
+            >
+              AI / ML &amp; Vision
+            </button>
+            <button
+              class="filter-btn"
+              data-filter="fullstack"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              id="filter-fullstack"
+            >
+              Full-Stack &amp; Web
+            </button>
+            <button
+              class="filter-btn"
+              data-filter="systems"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              id="filter-systems"
+            >
+              Algorithms &amp; VLSI
+            </button>
+          </div>
+
+          <div class="projects-grid">
+            <!-- 1. Digital Marketing Simulator -->
+            <article class="project-card reveal" data-category="fullstack ai-cv">
+              <div class="project-visual">
+                <span class="project-badge">Featured &bull; Full-Stack + ML</span>
+                <!-- Custom Inline SVG Visual: Dynamic Node-Graph Funnel -->
+                <div class="project-svg-visual">
+                  <svg viewBox="0 0 400 185" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <linearGradient id="dmsGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#38bdf8"/>
+                        <stop offset="100%" stop-color="#818cf8"/>
+                      </linearGradient>
+                      <linearGradient id="nodeGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#1e293b"/>
+                        <stop offset="100%" stop-color="#0f172a"/>
+                      </linearGradient>
+                      <pattern id="gridDms" width="20" height="20" patternUnits="userSpaceOnUse">
+                        <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(148, 163, 184, 0.08)" stroke-width="1"/>
+                      </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#gridDms)" />
+                    <!-- Connecting Bezier lines -->
+                    <path d="M 70 92 C 120 92, 130 50, 180 50" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="4,4" />
+                    <path d="M 70 92 C 120 92, 130 135, 180 135" fill="none" stroke="#818cf8" stroke-width="2.5" />
+                    <path d="M 240 50 C 280 50, 290 92, 330 92" fill="none" stroke="#38bdf8" stroke-width="2.5" />
+                    <path d="M 240 135 C 280 135, 290 92, 330 92" fill="none" stroke="#818cf8" stroke-width="2.5" />
+                    <!-- Input Node -->
+                    <rect x="20" y="70" width="60" height="44" rx="8" fill="url(#nodeGrad1)" stroke="#38bdf8" stroke-width="1.5"/>
+                    <text x="50" y="96" fill="#f8fafc" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle" font-weight="600">IN: Ad</text>
+                    <!-- Mid Node 1 -->
+                    <rect x="170" y="28" width="80" height="44" rx="8" fill="url(#nodeGrad1)" stroke="#818cf8" stroke-width="1.5"/>
+                    <text x="210" y="48" fill="#38bdf8" font-size="10" font-family="'JetBrains Mono', monospace" text-anchor="middle" font-weight="600">CTR Predict</text>
+                    <text x="210" y="63" fill="#94a3b8" font-size="9" font-family="'Inter', sans-serif" text-anchor="middle">94.2% Acc</text>
+                    <!-- Mid Node 2 -->
+                    <rect x="170" y="113" width="80" height="44" rx="8" fill="url(#nodeGrad1)" stroke="#c084fc" stroke-width="1.5"/>
+                    <text x="210" y="133" fill="#c084fc" font-size="10" font-family="'JetBrains Mono', monospace" text-anchor="middle" font-weight="600">CVR Node</text>
+                    <text x="210" y="148" fill="#94a3b8" font-size="9" font-family="'Inter', sans-serif" text-anchor="middle">Flask REST</text>
+                    <!-- Output Node -->
+                    <rect x="320" y="70" width="65" height="44" rx="8" fill="url(#nodeGrad1)" stroke="#34d399" stroke-width="1.5"/>
+                    <text x="352" y="96" fill="#34d399" font-size="11" font-family="'JetBrains Mono', monospace" text-anchor="middle" font-weight="700">ROI Sim</text>
+                  </svg>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Digital Marketing Simulator</h3>
+                <p class="project-desc">
+                  Built REST APIs using Flask and SQLite, integrated dynamic drag-and-drop UI node
+                  graphs (Angular 8 &amp; GoJS) with backend data pipelines, and implemented
+                  predictive regression models achieving <strong>94% accuracy</strong> in marketing
+                  funnel and trend forecasts.
+                </p>
+
+                <!-- Expandable Architecture Pipeline Flow -->
+                <details class="arch-details" style="margin-bottom: 14px;">
+                  <summary class="arch-summary">
+                    <i class="fas fa-sitemap"></i>
+                    <span>View Simulator Pipeline Flow</span>
+                    <i class="fas fa-chevron-down summary-chevron"></i>
+                  </summary>
+                  <div class="arch-flow">
+                    <div class="arch-step">
+                      <span class="arch-step-tag">UI</span>
+                      <strong>Angular + GoJS Flow</strong>
+                      <small>Visual drag-and-drop funnel graphs</small>
+                    </div>
+                    <div class="arch-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="arch-step">
+                      <span class="arch-step-tag">API</span>
+                      <strong>Flask REST Engine</strong>
+                      <small>Node graph serialization &amp; validation</small>
+                    </div>
+                    <div class="arch-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="arch-step">
+                      <span class="arch-step-tag">Model</span>
+                      <strong>scikit-learn Predictor</strong>
+                      <small>94% accuracy regression simulation</small>
+                    </div>
                   </div>
+                </details>
 
-                  <div class="col-lg-6 col-12">
-                    <input type="email" class="form-control" name="email" placeholder="Email" id="email">
+                <div class="tag-list" style="margin-bottom: 16px;">
+                  <span class="tag">Python</span>
+                  <span class="tag">Flask</span>
+                  <span class="tag">Angular</span>
+                  <span class="tag">GoJS</span>
+                  <span class="tag">SQLite</span>
+                  <span class="tag">scikit-learn</span>
+                </div>
+                <div class="project-footer">
+                  <a
+                    href="https://github.com/Bruces1998/digital_marketing_simulator_flask_and_angular"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
+                    <span>View Source</span>
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 2. Emotion Detector -->
+            <article class="project-card reveal" data-category="ai-cv">
+              <div class="project-visual">
+                <span class="project-badge">Computer Vision</span>
+                <img
+                  src="static/images/project/Emotion_Detector.png"
+                  alt="Emotion Detector live facial classification screenshot"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Real-Time Facial Emotion Detector</h3>
+                <p class="project-desc">
+                  Convolutional Neural Network pipeline that classifies human facial expressions
+                  into 5 distinct emotion categories in real time. Processed 5,000+ video frames to
+                  build a diverse dataset and achieved a <strong>91% precision rate</strong>.
+                </p>
+                <div class="tag-list" style="margin-bottom: 16px;">
+                  <span class="tag">Python</span>
+                  <span class="tag">Keras</span>
+                  <span class="tag">OpenCV</span>
+                  <span class="tag">scikit-learn</span>
+                  <span class="tag">CNN</span>
+                </div>
+                <div class="project-footer">
+                  <a
+                    href="https://github.com/Bruces1998/emotionDetection"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
+                    <span>View Source</span>
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 3. Fiduccia-Mattheyses VLSI Algorithm -->
+            <article class="project-card reveal" data-category="systems">
+              <div class="project-visual">
+                <span class="project-badge">VLSI CAD &amp; Graph Algorithms</span>
+                <!-- Custom Inline SVG Visual: Hypergraph Min-Cut Partitioning -->
+                <div class="project-svg-visual">
+                  <svg viewBox="0 0 400 185" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <linearGradient id="blockA" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.15"/>
+                        <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.05"/>
+                      </linearGradient>
+                      <linearGradient id="blockB" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#c084fc" stop-opacity="0.15"/>
+                        <stop offset="100%" stop-color="#c084fc" stop-opacity="0.05"/>
+                      </linearGradient>
+                    </defs>
+                    <!-- Partition A Box -->
+                    <rect x="30" y="20" width="155" height="145" rx="10" fill="url(#blockA)" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="4,3"/>
+                    <text x="50" y="42" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">Partition A</text>
+
+                    <!-- Partition B Box -->
+                    <rect x="215" y="20" width="155" height="145" rx="10" fill="url(#blockB)" stroke="#c084fc" stroke-width="1.5" stroke-dasharray="4,3"/>
+                    <text x="235" y="42" fill="#c084fc" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">Partition B</text>
+
+                    <!-- Min Cut Dividing Line -->
+                    <line x1="200" y1="10" x2="200" y2="175" stroke="#fbbf24" stroke-width="2" stroke-dasharray="6,4"/>
+                    <text x="200" y="180" fill="#fbbf24" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle" font-weight="700">Min-Cut Boundary</text>
+
+                    <!-- Cells in Partition A -->
+                    <circle cx="75" cy="75" r="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+                    <text x="75" y="79" fill="#f8fafc" font-size="9" font-family="'JetBrains Mono', monospace" text-anchor="middle">c1</text>
+                    <circle cx="130" cy="110" r="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+                    <text x="130" y="114" fill="#f8fafc" font-size="9" font-family="'JetBrains Mono', monospace" text-anchor="middle">c2</text>
+                    <circle cx="70" cy="135" r="12" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+                    <text x="70" y="139" fill="#94a3b8" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle">c3</text>
+
+                    <!-- Cells in Partition B -->
+                    <circle cx="270" cy="75" r="14" fill="#1e293b" stroke="#c084fc" stroke-width="2"/>
+                    <text x="270" y="79" fill="#f8fafc" font-size="9" font-family="'JetBrains Mono', monospace" text-anchor="middle">c4</text>
+                    <circle cx="330" cy="120" r="14" fill="#1e293b" stroke="#c084fc" stroke-width="2"/>
+                    <text x="330" y="124" fill="#f8fafc" font-size="9" font-family="'JetBrains Mono', monospace" text-anchor="middle">c5</text>
+                    <circle cx="265" cy="135" r="12" fill="#1e293b" stroke="#c084fc" stroke-width="1.5"/>
+                    <text x="265" y="139" fill="#94a3b8" font-size="8" font-family="'JetBrains Mono', monospace" text-anchor="middle">c6</text>
+
+                    <!-- Cut Hyperedges crossing the partition -->
+                    <path d="M 130 110 Q 200 70 270 75" fill="none" stroke="#fbbf24" stroke-width="2.5"/>
+                    <line x1="75" y1="75" x2="130" y2="110" stroke="#38bdf8" stroke-width="1.5"/>
+                    <line x1="270" y1="75" x2="330" y2="120" stroke="#c084fc" stroke-width="1.5"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Fiduccia-Mattheyses Circuit Partitioner</h3>
+                <p class="project-desc">
+                  Heuristic hypergraph bi-partitioning engine for VLSI physical design automation.
+                  Utilizes O(1) dictionary gain-buckets to iteratively minimize netlist cut sizes
+                  across 18 IBM ISPD98 benchmark circuits scaling to 200,000+ modules.
+                </p>
+
+                <!-- Expandable Architecture Pipeline Flow -->
+                <details class="arch-details" style="margin-bottom: 14px;">
+                  <summary class="arch-summary">
+                    <i class="fas fa-sitemap"></i>
+                    <span>View Partitioning Algorithm Architecture</span>
+                    <i class="fas fa-chevron-down summary-chevron"></i>
+                  </summary>
+                  <div class="arch-flow">
+                    <div class="arch-step">
+                      <span class="arch-step-tag">Input</span>
+                      <strong>ISPD98 Netlist Parser</strong>
+                      <small>200k+ hypergraph cells &amp; interconnect nets</small>
+                    </div>
+                    <div class="arch-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="arch-step">
+                      <span class="arch-step-tag">Index</span>
+                      <strong>O(1) Bucket Arrays</strong>
+                      <small>Constant-time cell gain updates &amp; locks</small>
+                    </div>
+                    <div class="arch-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="arch-step">
+                      <span class="arch-step-tag">Cut</span>
+                      <strong>Min-Cut Bi-Partitioning</strong>
+                      <small>Iterative boundary minimization across blocks</small>
+                    </div>
                   </div>
+                </details>
 
-                  <div class="col-12">
-                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"></textarea>
-                  </div>
+                <div class="tag-list" style="margin-bottom: 16px;">
+                  <span class="tag">Python</span>
+                  <span class="tag">VLSI Design</span>
+                  <span class="tag">Hypergraphs</span>
+                  <span class="tag">ISPD98 Benchmarks</span>
+                </div>
+                <div class="project-footer">
+                  <a
+                    href="https://github.com/Bruces1998/FM_algorithm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
+                    <span>View Source</span>
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
 
-                  <div class="ml-lg-auto col-lg-5 col-12">
-                    <input type="submit" class="form-control submit-btn" value="Send Button">
+            <!-- 4. Covid Mask Detector -->
+            <article class="project-card reveal" data-category="ai-cv">
+              <div class="project-visual">
+                <span class="project-badge">Deep Learning</span>
+                <img
+                  src="static/images/project/mask_detector.png"
+                  alt="COVID-19 Face Mask Detector bounding box preview"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Live Face Mask Compliance Detector</h3>
+                <p class="project-desc">
+                  Real-time computer vision detector built with TensorFlow/Keras and OpenCV that
+                  localizes faces in video streams and classifies mask usage with over 91%
+                  confidence.
+                </p>
+                <div class="tag-list" style="margin-bottom: 16px;">
+                  <span class="tag">Python</span>
+                  <span class="tag">TensorFlow / Keras</span>
+                  <span class="tag">OpenCV</span>
+                  <span class="tag">Computer Vision</span>
+                </div>
+                <div class="project-footer">
+                  <a
+                    href="https://github.com/Bruces1998/Covid_Mask_Detection"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
+                    <span>View Source</span>
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 5. Image Captioning -->
+            <article class="project-card reveal" data-category="ai-cv">
+              <div class="project-visual">
+                <span class="project-badge">Vision + NLP</span>
+                <img
+                  src="static/images/project/project1.png"
+                  alt="CNN + LSTM Image Captioning Architecture"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Neural Image Captioning (CNN + LSTM)</h3>
+                <p class="project-desc">
+                  End-to-end multimodal deep learning model combining a pretrained ImageNet CNN
+                  visual encoder with an LSTM recurrent language decoder to generate natural
+                  language descriptions of photographs.
+                </p>
+                <div class="tag-list" style="margin-bottom: 16px;">
+                  <span class="tag">Python</span>
+                  <span class="tag">CNN</span>
+                  <span class="tag">RNN / LSTM</span>
+                  <span class="tag">ImageNet</span>
+                </div>
+                <div class="project-footer">
+                  <a
+                    href="https://github.com/Bruces1998/imageCaption"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
+                    <span>View Source</span>
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 6. DSA & Algorithmic Notes -->
+            <article class="project-card reveal" data-category="systems">
+              <div class="project-visual">
+                <span class="project-badge">Algorithms</span>
+                <!-- Custom Inline SVG Visual: Algorithmic Balance Tree -->
+                <div class="project-svg-visual">
+                  <svg viewBox="0 0 400 185" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Tree edges -->
+                    <line x1="200" y1="36" x2="120" y2="82" stroke="#64748b" stroke-width="2"/>
+                    <line x1="200" y1="36" x2="280" y2="82" stroke="#64748b" stroke-width="2"/>
+                    <line x1="120" y1="82" x2="80" y2="135" stroke="#64748b" stroke-width="2"/>
+                    <line x1="120" y1="82" x2="155" y2="135" stroke="#38bdf8" stroke-width="2.5"/>
+                    <line x1="280" y1="82" x2="245" y2="135" stroke="#64748b" stroke-width="2"/>
+                    <line x1="280" y1="82" x2="320" y2="135" stroke="#34d399" stroke-width="2.5"/>
+                    <!-- Root Node -->
+                    <circle cx="200" cy="36" r="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2.5"/>
+                    <text x="200" y="41" fill="#f8fafc" font-size="11" font-family="'JetBrains Mono', monospace" font-weight="700" text-anchor="middle">50</text>
+                    <!-- Level 1 Nodes -->
+                    <circle cx="120" cy="82" r="16" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+                    <text x="120" y="87" fill="#38bdf8" font-size="10" font-family="'JetBrains Mono', monospace" font-weight="600" text-anchor="middle">25</text>
+                    <circle cx="280" cy="82" r="16" fill="#1e293b" stroke="#818cf8" stroke-width="2"/>
+                    <text x="280" y="87" fill="#818cf8" font-size="10" font-family="'JetBrains Mono', monospace" font-weight="600" text-anchor="middle">75</text>
+                    <!-- Level 2 Leaf Nodes -->
+                    <circle cx="80" cy="135" r="14" fill="#0f172a" stroke="#64748b" stroke-width="1.5"/>
+                    <text x="80" y="139" fill="#94a3b8" font-size="9" font-family="'JetBrains Mono', monospace" text-anchor="middle">12</text>
+                    <circle cx="155" cy="135" r="14" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
+                    <text x="155" y="139" fill="#38bdf8" font-size="9" font-family="'JetBrains Mono', monospace" font-weight="700" text-anchor="middle">37</text>
+                    <circle cx="245" cy="135" r="14" fill="#0f172a" stroke="#64748b" stroke-width="1.5"/>
+                    <text x="245" y="139" fill="#94a3b8" font-size="9" font-family="'JetBrains Mono', monospace" text-anchor="middle">62</text>
+                    <circle cx="320" cy="135" r="14" fill="#0f172a" stroke="#34d399" stroke-width="2"/>
+                    <text x="320" y="139" fill="#34d399" font-size="9" font-family="'JetBrains Mono', monospace" font-weight="700" text-anchor="middle">88</text>
+                    <text x="200" y="172" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10" text-anchor="middle">O(log N) Balanced Search &amp; T-Shaped Prep</text>
+                  </svg>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">DSA &amp; Technical Interview Archive</h3>
+                <p class="project-desc">
+                  Comprehensive repository of Data Structures, Algorithms, and structured
+                  problem-solving patterns in Python and Jupyter Notebooks.
+                </p>
+                <div class="tag-list" style="margin-bottom: 16px;">
+                  <span class="tag">Python</span>
+                  <span class="tag">Data Structures</span>
+                  <span class="tag">Algorithms</span>
+                  <span class="tag">Jupyter</span>
+                </div>
+                <div class="project-footer">
+                  <a
+                    href="https://github.com/Bruces1998/DSA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
+                    <span>View Source</span>
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION & CERTIFICATIONS SECTION -->
+      <section class="section" id="education">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-eyebrow">Academic Background &amp; Credentials</span>
+            <h2 class="section-title">Education &amp; Certifications</h2>
+            <p class="section-subtitle">
+              Graduate and undergraduate degrees in Computer Engineering and Information Technology,
+              complemented by specialized machine learning certifications.
+            </p>
+          </div>
+
+          <div class="education-grid">
+            <!-- Stony Brook University -->
+            <article class="edu-card reveal">
+              <div class="edu-top">
+                <div>
+                  <h3 class="edu-school">Stony Brook University</h3>
+                  <div class="edu-degree">Master of Science (MS), Computer Engineering</div>
+                </div>
+                <span class="edu-gpa"><i class="fas fa-award"></i> GPA: 3.87 / 4.00</span>
+              </div>
+              <div class="edu-meta">
+                <i class="far fa-calendar-alt"></i> Jan 2024 – Dec 2025 &nbsp;&bull;&nbsp;
+                <i class="fas fa-location-dot"></i> Stony Brook, NY
+              </div>
+              <p class="edu-highlights">
+                Graduate Research Assistant at Stony Brook Medicine (Mofakham-Mikell Lab). Focused
+                on deep learning algorithms, computer vision, AI theory, and VLSI design automation.
+              </p>
+              <div class="tag-list">
+                <span class="tag">Deep Learning &amp; Algorithms</span>
+                <span class="tag">Theory of Artificial Intelligence</span>
+                <span class="tag">Computer &amp; Robot Vision</span>
+                <span class="tag">Software for VLSI Design</span>
+                <span class="tag">Network Security Engineering</span>
+                <span class="tag">Advanced Digital System Design</span>
+              </div>
+            </article>
+
+            <!-- University of Mumbai -->
+            <article class="edu-card reveal">
+              <div class="edu-top">
+                <div>
+                  <h3 class="edu-school">Vidyalankar Institute of Technology, University of Mumbai</h3>
+                  <div class="edu-degree">Bachelor of Engineering (BE), Information Technology</div>
+                </div>
+                <span class="edu-gpa"><i class="fas fa-award"></i> GPA: 9.30 / 10.00</span>
+              </div>
+              <div class="edu-meta">
+                <i class="far fa-calendar-alt"></i> Aug 2017 – Jun 2021 &nbsp;&bull;&nbsp;
+                <i class="fas fa-location-dot"></i> Mumbai, India
+              </div>
+              <p class="edu-highlights">
+                Department Topper in Semester III and Class Representative (2017–2021). Built
+                foundational systems and applied machine learning projects.
+              </p>
+              <div class="tag-list">
+                <span class="tag">Data Structures &amp; Algorithms</span>
+                <span class="tag">Database Management Systems</span>
+                <span class="tag">Python Programming</span>
+                <span class="tag">Artificial Intelligence</span>
+                <span class="tag">Cloud Computing</span>
+                <span class="tag">Computer Networks</span>
+              </div>
+            </article>
+
+            <!-- Licenses & Certifications -->
+            <article class="edu-card reveal">
+              <div class="edu-top">
+                <div>
+                  <h3 class="edu-school">Structuring Machine Learning Projects</h3>
+                  <div class="edu-degree">DeepLearning.AI &bull; License &amp; Certification</div>
+                </div>
+                <span class="edu-gpa"><i class="fas fa-certificate"></i> Verified</span>
+              </div>
+              <p class="edu-highlights">
+                Strategies for diagnosing errors in ML systems, prioritizing directions for
+                improving model performance, end-to-end deep learning workflows, and transfer/multi-task learning.
+              </p>
+              <div class="tag-list">
+                <span class="tag">ML Strategy</span>
+                <span class="tag">Error Analysis</span>
+                <span class="tag">DeepLearning.AI</span>
+              </div>
+            </article>
+
+            <article class="edu-card reveal">
+              <div class="edu-top">
+                <div>
+                  <h3 class="edu-school">Statistics with Python Specialization</h3>
+                  <div class="edu-degree">University of Michigan &bull; Coursera</div>
+                </div>
+                <span class="edu-gpa"><i class="fas fa-certificate"></i> Verified</span>
+              </div>
+              <p class="edu-highlights">
+                Statistical inference, study design, data management, regression modeling, and
+                exploratory data visualization using Python.
+              </p>
+              <div class="tag-list">
+                <span class="tag">Statistical Analysis</span>
+                <span class="tag">Python</span>
+                <span class="tag">University of Michigan</span>
+                <a
+                  href="https://coursera.org/share/4a304ad8d967f52eec1a1515b04a5b17"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                  style="margin-left: auto; font-size: 0.82rem;"
+                >
+                  <span>Credential</span>
+                  <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- BLOGS / SELECTED PUBLICATIONS & ARTICLES SECTION -->
+      <section class="section section-alt" id="blogs">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-eyebrow">Publications &amp; Thought Leadership</span>
+            <h2 class="section-title">Selected Articles &amp; Writing</h2>
+            <p class="section-subtitle">
+              Technical deep-dives on computer vision, conversational AI, graduate school insights,
+              and viral engineering interview preparation guides across LinkedIn and Medium.
+            </p>
+          </div>
+
+          <div class="blogs-grid">
+            <!-- 1. Google Interview Experience & T-Shaped Prep Guide -->
+            <article class="blog-card reveal">
+              <div class="blog-header-row">
+                <div class="blog-pub">
+                  <i class="fab fa-linkedin"></i>
+                  <span>LinkedIn Feature &bull; Interview Strategy</span>
+                </div>
+                <span class="impact-badge"><i class="fas fa-fire"></i> Viral Post &bull; 100K+ Views</span>
+              </div>
+              <h3 class="blog-title">Google Interview Experience &amp; T-Shaped Prep Guide</h3>
+              <p class="blog-excerpt">
+                Viral post breaking down technical interview strategies, building breadth across
+                core data structures with deep pattern mastery, and structured practice frameworks
+                that led to landing Google.
+              </p>
+              <div class="project-footer">
+                <span class="tag">Google &bull; Career &amp; DSA</span>
+                <a
+                  href="https://www.linkedin.com/in/aniketdsingh/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  <span>Read on LinkedIn</span>
+                  <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- 2. Pomodoro Technique -->
+            <article class="blog-card reveal">
+              <div class="blog-header-row">
+                <div class="blog-pub">
+                  <i class="fas fa-clock"></i>
+                  <span>Productivity &amp; Engineering Focus</span>
+                </div>
+                <span class="impact-badge"><i class="fas fa-chart-line"></i> Career &amp; Productivity Guide</span>
+              </div>
+              <h3 class="blog-title">
+                Using the Pomodoro Technique to Master Focus and Ace Technical Interviews
+              </h3>
+              <p class="blog-excerpt">
+                How deliberate time-boxed deep work sessions prevent burnout, sharpen algorithmic
+                problem-solving speed, and sustain consistency during high-stakes interview prep.
+              </p>
+              <div class="project-footer">
+                <span class="tag">Focus &amp; Interview Prep</span>
+                <a
+                  href="https://www.linkedin.com/in/aniketdsingh/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  <span>Read Article</span>
+                  <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- 3. Impact of Conversational AI on the Hiring Process -->
+            <article class="blog-card reveal">
+              <div class="blog-header-row">
+                <div class="blog-pub">
+                  <i class="fab fa-medium"></i>
+                  <span>Medium &bull; Applied AI</span>
+                </div>
+                <span class="impact-badge"><i class="fas fa-star"></i> Featured on Medium</span>
+              </div>
+              <h3 class="blog-title">Impact of Conversational AI on the Hiring Process</h3>
+              <p class="blog-excerpt">
+                Exploring how intelligent conversational agents and ML candidate-job matching models
+                streamline talent acquisition, screening workflows, and candidate experience.
+              </p>
+              <div class="project-footer">
+                <span class="tag">Conversational AI &amp; NLP</span>
+                <a
+                  href="https://medium.com/@bruces1998"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  <span>Read on Medium</span>
+                  <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- 4. Liveness Detection in Face Verification -->
+            <article class="blog-card reveal">
+              <div class="blog-header-row">
+                <div class="blog-pub">
+                  <i class="fab fa-medium"></i>
+                  <span>Analytics Vidhya &bull; Computer Vision</span>
+                </div>
+                <span class="impact-badge"><i class="fas fa-star"></i> Featured on Analytics Vidhya</span>
+              </div>
+              <h3 class="blog-title">Liveness Detection in Face Verification</h3>
+              <p class="blog-excerpt">
+                What happens if an attacker uses a photo or video replay to bypass facial
+                authentication? A technical guide to anti-spoofing, texture descriptors, and CNN
+                liveness detection pipelines.
+              </p>
+              <div class="project-footer">
+                <span class="tag">Biometrics &amp; CV</span>
+                <a
+                  href="https://medium.com/analytics-vidhya/liveness-detection-in-face-verification-a30b890ef2c7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  <span>Read Article</span>
+                  <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- 5. Complete Guide to R-CNN -->
+            <article class="blog-card reveal">
+              <div class="blog-header-row">
+                <div class="blog-pub">
+                  <i class="fab fa-medium"></i>
+                  <span>Analytics Vidhya &bull; Object Detection</span>
+                </div>
+                <span class="impact-badge"><i class="fas fa-book-open"></i> Featured on Analytics Vidhya</span>
+              </div>
+              <h3 class="blog-title">A Complete Guide to R-CNN</h3>
+              <p class="blog-excerpt">
+                A complete breakdown of Girshick's Region-based Convolutional Neural Networks
+                (R-CNN) for object detection and semantic segmentation—covering selective search,
+                CNN feature extraction, and bounding-box regression.
+              </p>
+              <div class="project-footer">
+                <span class="tag">Deep Learning &amp; R-CNN</span>
+                <a
+                  href="https://medium.com/analytics-vidhya/a-complete-guide-to-rcnn-2dc92c00243f"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  <span>Read Article</span>
+                  <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- 6. MS Journey & IIIT Allahabad Research -->
+            <article class="blog-card reveal">
+              <div class="blog-header-row">
+                <div class="blog-pub">
+                  <i class="fab fa-medium"></i>
+                  <span>Medium &bull; Grad School &amp; Research Series</span>
+                </div>
+                <span class="impact-badge"><i class="fas fa-graduation-cap"></i> Grad School Series</span>
+              </div>
+              <h3 class="blog-title">
+                First 6 Months of My MS in the USA &amp; IIIT Allahabad Research Experience
+              </h3>
+              <p class="blog-excerpt">
+                Candid reflections on transitioning to graduate research at Stony Brook University
+                and lessons learned during my computer vision research internship at IIIT Allahabad.
+              </p>
+              <div class="project-footer">
+                <span class="tag">MS in US &amp; Research</span>
+                <a
+                  href="https://medium.com/@bruces1998"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  <span>Read on Medium</span>
+                  <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT & OFFICE HOURS SECTION -->
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-eyebrow">Connect &amp; Office Hours</span>
+            <h2 class="section-title">Let's Chat — Tech, Research &amp; Career</h2>
+            <p class="section-subtitle">
+              Open to discussions on large-scale ML &amp; personalization, computer vision research,
+              and career transition chats via LinkedIn, Calendly office hours, or direct message.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <!-- Contact Details Card -->
+            <div class="contact-info-card reveal">
+              <h3 style="font-family: var(--font-display); font-size: 1.35rem; margin-bottom: 8px;">
+                Connect &amp; Office Hours
+              </h3>
+              <p style="color: var(--text-secondary); font-size: 0.94rem;">
+                Based in <strong>Mountain View, CA</strong>. Feel free to reach out for
+                1:1 office hours (Calendly), interview mentorship, or engineering collaborations.
+              </p>
+
+              <div class="contact-list">
+                <div class="contact-item">
+                  <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                  <div class="contact-detail">
+                    <small>LinkedIn &amp; Office Hours</small>
+                    <a
+                      href="https://www.linkedin.com/in/aniketdsingh/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      linkedin.com/in/aniketdsingh
+                    </a>
                   </div>
                 </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                  <div class="contact-detail">
+                    <small>Email</small>
+                    <a href="mailto:work.aniketdsingh@gmail.com">work.aniketdsingh@gmail.com</a>
+                  </div>
+                  <button class="copy-btn" id="copyEmailBtn" type="button">Copy</button>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon"><i class="fab fa-github"></i></div>
+                  <div class="contact-detail">
+                    <small>GitHub</small>
+                    <a
+                      href="https://github.com/Bruces1998"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      github.com/Bruces1998
+                    </a>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon"><i class="fas fa-location-dot"></i></div>
+                  <div class="contact-detail">
+                    <small>Location</small>
+                    <span>Mountain View, California, United States</span>
+                  </div>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  id="openOfficeHoursCardBtn"
+                  style="flex: 1;"
+                  data-open-office-hours
+                >
+                  <i class="fas fa-calendar-check"></i>
+                  <span>Book Office Hours</span>
+                </button>
+                <a
+                  href="static/Aniket_Singh_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary"
+                  style="flex: 1;"
+                >
+                  <i class="fas fa-file-arrow-down"></i>
+                  <span>Resume (PDF)</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Interactive Contact Form -->
+            <div class="contact-form-card reveal">
+              <h3 style="font-family: var(--font-display); font-size: 1.35rem; margin-bottom: 18px;">
+                Send a Direct Message
+              </h3>
+              <form id="contactForm">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="senderName">Your Name</label>
+                    <input
+                      type="text"
+                      id="senderName"
+                      name="name"
+                      class="form-input"
+                      placeholder="Jane Doe"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="senderEmail">Your Email</label>
+                    <input
+                      type="email"
+                      id="senderEmail"
+                      name="email"
+                      class="form-input"
+                      placeholder="jane@company.com"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="senderSubject">Topic</label>
+                  <input
+                    type="text"
+                    id="senderSubject"
+                    name="subject"
+                    class="form-input"
+                    placeholder="ML / Systems Chat, Career Transition, or Collaboration"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="senderMessage">Message</label>
+                  <textarea
+                    id="senderMessage"
+                    name="message"
+                    rows="5"
+                    class="form-textarea"
+                    placeholder="Hi Aniket, I'd love to connect regarding..."
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                  <i class="fas fa-paper-plane"></i>
+                  <span>Send Message</span>
+                </button>
+                <p
+                  id="formStatus"
+                  style="display: none; margin-top: 12px; font-size: 0.85rem; color: var(--accent-emerald); text-align: center;"
+                ></p>
               </form>
             </div>
           </div>
+        </div>
+      </section>
+    </main>
 
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          &copy; <span id="currentYear">2026</span> <strong>Aniket Singh</strong> &bull; SWE @
+          Google (Mountain View, CA).
+        </div>
+        <div class="hero-socials">
+          <a
+            href="https://www.linkedin.com/in/aniketdsingh/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-ghost"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://github.com/Bruces1998"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-ghost"
+            aria-label="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://medium.com/@bruces1998"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-ghost"
+            aria-label="Medium"
+          >
+            <i class="fab fa-medium-m"></i>
+          </a>
+          <a href="mailto:work.aniketdsingh@gmail.com" class="btn-ghost" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
         </div>
       </div>
-    </section>
+    </footer>
 
-    <!-- FOOTER -->
-     <footer class="footer py-5">
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-lg-12 col-12">                                
-                        <p class="copyright-text text-center">Copyright &copy; 2021 Aniket Singh . All rights reserved</p>                    </div>
-                    
-               </div>
+    <!-- INTERACTIVE 1:1 OFFICE HOURS MODAL -->
+    <div
+      class="modal-overlay"
+      id="officeHoursModal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="officeHoursTitle"
+      style="display: none;"
+    >
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <div class="modal-title-wrap">
+            <div class="modal-icon"><i class="fas fa-calendar-check"></i></div>
+            <div>
+              <h3 id="officeHoursTitle" class="modal-title">Schedule 1:1 Office Hours</h3>
+              <p class="modal-subtitle">Pick a topic for tech mentorship, career chats, or research</p>
+            </div>
           </div>
-     </footer>
-     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
-    <script src="./static/js/jquery-3.3.1.min.js"></script>
-    <script src="./static/js/popper.min.js"></script>
-    <script src="./static/js/bootstrap.min.js"></script>
-    <script src="./static/js/Headroom.js"></script>
-    <script src="./static/js/jQuery.headroom.js"></script>
-    <script src="./static/js/owl.carousel.min.js"></script>
-    <script src="./static/js/smoothscroll.js"></script>
-    <script src="./static/js/custom.js"></script>
+          <button class="modal-close" id="closeOfficeHoursModal" type="button" aria-label="Close Office Hours Modal">
+            <i class="fas fa-xmark"></i>
+          </button>
+        </div>
 
+        <div class="modal-body">
+          <label class="form-label">Select Discussion Topic</label>
+          <div class="topic-chips" id="topicChips">
+            <button type="button" class="topic-chip active" data-topic="Google SWE Interview &amp; T-Shaped Prep">
+              <i class="fab fa-google"></i> Google SWE Interview &amp; T-Shaped Prep
+            </button>
+            <button type="button" class="topic-chip" data-topic="MS in US / Grad School">
+              <i class="fas fa-graduation-cap"></i> MS in US / Grad School
+            </button>
+            <button type="button" class="topic-chip" data-topic="ML &amp; RecSys Architecture">
+              <i class="fas fa-brain"></i> ML &amp; RecSys Architecture
+            </button>
+            <button type="button" class="topic-chip" data-topic="Career Transition">
+              <i class="fas fa-chart-line"></i> Career Transition
+            </button>
+          </div>
+
+          <div class="form-group" style="margin-top: 18px;">
+            <label class="form-label" for="officeHoursNote">Quick Note / Background (Optional)</label>
+            <textarea
+              id="officeHoursNote"
+              rows="3"
+              class="form-textarea"
+              placeholder="Tell me a bit about your background, goals, or what specific questions you'd like to dive into..."
+            ></textarea>
+          </div>
+
+          <div class="office-hours-actions">
+            <a
+              href="https://www.linkedin.com/in/aniketdsingh/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+              id="btnBookLinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+              <span>Connect &amp; Book via LinkedIn</span>
+            </a>
+            <button type="button" class="btn btn-secondary" id="btnPrefillContact">
+              <i class="fas fa-envelope"></i>
+              <span>Prefill Message Form</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMMAND PALETTE MODAL (⌘K) -->
+    <div
+      class="cmd-overlay"
+      id="cmdPaletteModal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="cmdPaletteTitle"
+      style="display: none;"
+    >
+      <div class="cmd-modal">
+        <div class="cmd-header">
+          <i class="fas fa-terminal cmd-search-icon"></i>
+          <input
+            type="text"
+            class="cmd-input"
+            id="cmdInput"
+            placeholder="Type a command or jump to section... (Esc to exit)"
+            autocomplete="off"
+            spellcheck="false"
+            aria-label="Search command palette"
+          />
+          <kbd class="cmd-kbd">ESC</kbd>
+        </div>
+
+        <div class="cmd-body">
+          <div class="cmd-list" id="cmdList" role="listbox">
+            <!-- Command items populated / filtered dynamically -->
+            <div class="cmd-item" role="option" tabindex="0" data-action="experience">
+              <i class="fas fa-briefcase cmd-item-icon"></i>
+              <div class="cmd-item-text">
+                <span class="cmd-item-title">Jump to Career Experience</span>
+                <span class="cmd-item-desc">Google Play ML, Google Workspace, Stony Brook Medicine</span>
+              </div>
+              <kbd class="cmd-item-badge">G E</kbd>
+            </div>
+
+            <div class="cmd-item" role="option" tabindex="0" data-action="projects">
+              <i class="fas fa-diagram-project cmd-item-icon"></i>
+              <div class="cmd-item-text">
+                <span class="cmd-item-title">Explore Featured Projects</span>
+                <span class="cmd-item-desc">Digital Marketing Simulator, Emotion Detector, VLSI FM</span>
+              </div>
+              <kbd class="cmd-item-badge">G J</kbd>
+            </div>
+
+            <div class="cmd-item" role="option" tabindex="0" data-action="skills">
+              <i class="fas fa-code cmd-item-icon"></i>
+              <div class="cmd-item-text">
+                <span class="cmd-item-title">View Skills &amp; Arsenal</span>
+                <span class="cmd-item-desc">TensorFlow, PyTorch, C++, Python, Distributed Systems</span>
+              </div>
+              <kbd class="cmd-item-badge">G S</kbd>
+            </div>
+
+            <div class="cmd-item" role="option" tabindex="0" data-action="blogs">
+              <i class="fas fa-newspaper cmd-item-icon"></i>
+              <div class="cmd-item-text">
+                <span class="cmd-item-title">Read Publications &amp; Writing</span>
+                <span class="cmd-item-desc">Viral Google interview guide, R-CNN, Liveness detection</span>
+              </div>
+              <kbd class="cmd-item-badge">G W</kbd>
+            </div>
+
+            <div class="cmd-item" role="option" tabindex="0" data-action="office-hours">
+              <i class="fas fa-calendar-check cmd-item-icon"></i>
+              <div class="cmd-item-text">
+                <span class="cmd-item-title">Book 1:1 Office Hours / Mentorship</span>
+                <span class="cmd-item-desc">Google SWE prep, Grad school, RecSys discussions</span>
+              </div>
+              <kbd class="cmd-item-badge">O H</kbd>
+            </div>
+
+            <div class="cmd-item" role="option" tabindex="0" data-action="resume">
+              <i class="fas fa-file-pdf cmd-item-icon"></i>
+              <div class="cmd-item-text">
+                <span class="cmd-item-title">Download Resume (PDF)</span>
+                <span class="cmd-item-desc">Open official PDF resume in new tab</span>
+              </div>
+              <kbd class="cmd-item-badge">PDF</kbd>
+            </div>
+
+            <div class="cmd-item" role="option" tabindex="0" data-action="copy-email">
+              <i class="fas fa-copy cmd-item-icon"></i>
+              <div class="cmd-item-text">
+                <span class="cmd-item-title">Copy Email Address</span>
+                <span class="cmd-item-desc">work.aniketdsingh@gmail.com</span>
+              </div>
+              <kbd class="cmd-item-badge">COPY</kbd>
+            </div>
+
+            <div class="cmd-item" role="option" tabindex="0" data-action="theme">
+              <i class="fas fa-circle-half-stroke cmd-item-icon"></i>
+              <div class="cmd-item-text">
+                <span class="cmd-item-title">Toggle Dark / Light Theme</span>
+                <span class="cmd-item-desc">Switch between obsidian dark and clean light modes</span>
+              </div>
+              <kbd class="cmd-item-badge">T</kbd>
+            </div>
+
+            <div class="cmd-item" role="option" tabindex="0" data-action="linkedin">
+              <i class="fab fa-linkedin-in cmd-item-icon"></i>
+              <div class="cmd-item-text">
+                <span class="cmd-item-title">Open LinkedIn Profile</span>
+                <span class="cmd-item-desc">linkedin.com/in/aniketdsingh</span>
+              </div>
+              <kbd class="cmd-item-badge">EXT</kbd>
+            </div>
+
+            <div class="cmd-item" role="option" tabindex="0" data-action="github">
+              <i class="fab fa-github cmd-item-icon"></i>
+              <div class="cmd-item-text">
+                <span class="cmd-item-title">Open GitHub Profile</span>
+                <span class="cmd-item-desc">github.com/Bruces1998</span>
+              </div>
+              <kbd class="cmd-item-badge">EXT</kbd>
+            </div>
+          </div>
+        </div>
+
+        <div class="cmd-footer">
+          <div class="cmd-footer-keys">
+            <span><kbd>↑</kbd> <kbd>↓</kbd> navigate</span>
+            <span><kbd>↵</kbd> select</span>
+            <span><kbd>esc</kbd> close</span>
+          </div>
+          <span>Aniket Singh Portfolio</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION CONTAINER -->
+    <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+    <!-- Portfolio Interactive Script -->
+    <script src="static/js/portfolio.js"></script>
   </body>
 </html>

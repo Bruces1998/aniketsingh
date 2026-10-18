@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="60" result="blur" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)" />
+
+  <!-- Ambient Glow Circles -->
+  <circle cx="200" cy="150" r="180" fill="#38bdf8" opacity="0.18" filter="url(#glow)" />
+  <circle cx="1000" cy="450" r="220" fill="#c084fc" opacity="0.18" filter="url(#glow)" />
+  <circle cx="600" cy="300" r="150" fill="#818cf8" opacity="0.12" filter="url(#glow)" />
+
+  <!-- Outer Frame -->
+  <rect x="40" y="40" width="1120" height="550" rx="24" fill="none" stroke="#334155" stroke-width="1.5" opacity="0.6" />
+
+  <!-- Monogram Logo Pill -->
+  <rect x="90" y="90" width="60" height="60" rx="16" fill="url(#accent)" />
+  <text x="120" y="128" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif" font-weight="800" font-size="26" fill="#ffffff">AS</text>
+
+  <!-- Status Pill -->
+  <rect x="170" y="98" width="460" height="44" rx="22" fill="#1e293b" stroke="#334155" stroke-width="1" />
+  <circle cx="195" cy="120" r="5" fill="#10b981" />
+  <text x="215" y="127" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif" font-weight="600" font-size="16" fill="#94a3b8">SWE @ Google • Mountain View, CA</text>
+
+  <!-- Hero Title -->
+  <text x="90" y="240" font-family="-apple-system, BlinkMacSystemFont, 'Space Grotesk', 'Inter', sans-serif" font-weight="800" font-size="64" fill="#ffffff" letter-spacing="-1px">
+    Aniket Singh
+  </text>
+
+  <!-- Subtitle with Gradient -->
+  <text x="90" y="305" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-weight="700" font-size="34" fill="url(#accent)">
+    Software Engineer (AI/ML) @ Google Play
+  </text>
+
+  <!-- Description -->
+  <text x="90" y="370" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-weight="400" font-size="22" fill="#cbd5e1">
+    Large-Scale Personalization &amp; Recommendation Models • Distributed Systems
+  </text>
+  <text x="90" y="405" font-family="-apple-system, BlinkMacSystemFont, 'Inter', sans-serif" font-weight="400" font-size="20" fill="#94a3b8">
+    MS Computer Engineering @ Stony Brook University • Ex-Google Vids Intern
+  </text>
+
+  <!-- Tags Row -->
+  <g transform="translate(90, 470)">
+    <rect x="0" y="0" width="165" height="44" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="82" y="27" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'JetBrains Mono', monospace" font-size="15" fill="#38bdf8">#Personalization</text>
+
+    <rect x="180" y="0" width="135" height="44" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="247" y="27" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'JetBrains Mono', monospace" font-size="15" fill="#818cf8">#TensorFlow</text>
+
+    <rect x="330" y="0" width="135" height="44" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="397" y="27" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'JetBrains Mono', monospace" font-size="15" fill="#c084fc">#PyTorch</text>
+
+    <rect x="480" y="0" width="150" height="44" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="555" y="27" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'JetBrains Mono', monospace" font-size="15" fill="#34d399">#TwoTowerRecSys</text>
+
+    <rect x="645" y="0" width="170" height="44" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="730" y="27" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'JetBrains Mono', monospace" font-size="15" fill="#fbbf24">#ComputerVision</text>
+  </g>
+
+  <!-- URL watermark -->
+  <text x="1100" y="550" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'JetBrains Mono', monospace" font-size="16" fill="#64748b">
+    aniketsingh.dev • linkedin.com/in/aniketdsingh
+  </text>
+</svg>
