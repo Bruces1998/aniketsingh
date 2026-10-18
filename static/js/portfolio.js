@@ -40,13 +40,13 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --------------------------------------------------------------------------
-  // 2. Theme Toggle (Dark default, persisted in localStorage)
+  // 2. Theme Toggle (Light default, persisted in localStorage)
   // --------------------------------------------------------------------------
   const themeToggleBtn = document.getElementById('themeToggle');
   const themeIcon = document.getElementById('themeIcon');
   const rootEl = document.documentElement;
 
-  const savedTheme = localStorage.getItem('aniket_portfolio_theme') || 'dark';
+  const savedTheme = localStorage.getItem('aniket_theme_light_v1') || 'light';
   setTheme(savedTheme);
 
   if (themeToggleBtn) {
@@ -63,10 +63,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function toggleTheme() {
-    const current = rootEl.getAttribute('data-theme') || 'dark';
+    const current = rootEl.getAttribute('data-theme') || 'light';
     const next = current === 'dark' ? 'light' : 'dark';
     setTheme(next);
-    localStorage.setItem('aniket_portfolio_theme', next);
+    localStorage.setItem('aniket_theme_light_v1', next);
     showToast(`Switched to ${next === 'dark' ? 'Dark' : 'Light'} Mode`, 'info', 2000);
   }
 
