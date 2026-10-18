@@ -228,8 +228,11 @@ MS in Computer Engineering from Stony Brook University (GPA: 3.87/4.00).`,
     },
 
     resume: () => {
-      window.open('static/Aniket_Singh_Resume.pdf', '_blank');
-      return 'Opening Aniket_Singh_Resume.pdf in a new tab...';
+      window.open(
+        'https://docs.google.com/document/d/1K_ZaYilpDd4CQGQXnkKTYOYGXr7IjDDv/edit?usp=sharing&ouid=114494118429740793713&rtpof=true&sd=true',
+        '_blank'
+      );
+      return 'Opening Google Drive link to request resume access...';
     },
 
     clear: () => {
@@ -588,7 +591,10 @@ MS in Computer Engineering from Stony Brook University (GPA: 3.87/4.00).`,
         openOfficeHoursModal();
         break;
       case 'resume':
-        window.open('static/Aniket_Singh_Resume.pdf', '_blank');
+        window.open(
+          'https://docs.google.com/document/d/1K_ZaYilpDd4CQGQXnkKTYOYGXr7IjDDv/edit?usp=sharing&ouid=114494118429740793713&rtpof=true&sd=true',
+          '_blank'
+        );
         break;
       case 'copy-email':
         copyEmailAddress();
